@@ -1,4 +1,4 @@
-# Ventilator Pressure Prediction
+# Sentiment Analysis of Amazon Fine Food reviews
 
 
 ## Team Members: 
