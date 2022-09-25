@@ -1,4 +1,4 @@
-# Sentiment Analysis of Amazon Fine Food reviews
+# Sentiment Analysis of Amazon Fine Food Reviews
 
 
 ## Team Members: 
