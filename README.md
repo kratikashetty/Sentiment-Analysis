@@ -2,7 +2,7 @@
 
 
 ## Team Members: 
-Anamika Kumari, Ashay Aglawe, Kratika Shetty, Murlidhar Koripalli
+Devna Ramesh, Kratika Shetty
 
 ## Background and Motivation
 Ventilators have proven to be a lifesaver during the pandemic. However, mechanical ventilation is a clinician-intensive procedure, a limitation that was prominently on display during the early days of the COVID-19 pandemic.
