@@ -5,8 +5,15 @@
 Devna Ramesh, Kratika Shetty
 
 ## Background and Motivation
-Ventilators have proven to be a lifesaver during the pandemic. However, mechanical ventilation is a clinician-intensive procedure, a limitation that was prominently on display during the early days of the COVID-19 pandemic.
+To perform Sentiment Analysis of Amazon Fine Food Reviews and compare the performance of two Model - VADER and Roberta Base Model.
 
+VADER - Valence Aware Dictionary and sEntiment Reasoner. VADER is a type of sentiment analysis that relies on lexicons of sentiment-related words. Every word in the lexicon is evaluated using this process to determine if it is positive or negative and, if so, how +ve or -ve.
+
+When VADER looks at a piece of text, it checks to see whether any of the terms are recognized in the lexicon. For instance in the sentence, "The food is fantastic, and the environment is awesome", the terms "amazing" and "great" are present in the lexicon with score of 1.9 and 1.8 respectively.
+
+VADER generates four sentiment metrics - +ve, neutral, -ve and compound score.
+
+The Compound score is a metric that calculates the sum of all the lexicon ratings which have been normalized between -1(most extreme negative) and +1 (most extreme positive).
 
 
 
