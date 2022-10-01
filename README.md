@@ -95,7 +95,7 @@ There are three unique values for R and C each.
 
 Plot of pressure across different combination of R & C for different Breath IDs is shown below. We can infer from below that pressure is dependent on the values of R and C.
 <p align="middle">
-  <img src="Images/pressure_rc.png" width="450" /> 
+  <img src="Images/screenshot1.png" width="450" /> 
 </p>
 
 ## Feature Engineering
