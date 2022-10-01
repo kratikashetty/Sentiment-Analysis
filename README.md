@@ -15,7 +15,7 @@ VADER generates four sentiment metrics - +ve, neutral, -ve and compound score.
 
 The Compound score is a metric that calculates the sum of all the lexicon ratings which have been normalized between -1(most extreme negative) and +1 (most extreme positive).
 
-
+Twitter-roBERTa-base for Sentiment Analysis - This is a roBERTa-base model trained on ~58M tweets and finetuned for sentiment analysis with the TweetEval benchmark. This model is suitable for English.
 
 ## Dataset
 ### Amazon Fine Food Reviews
