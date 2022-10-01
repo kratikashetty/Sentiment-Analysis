@@ -7,26 +7,34 @@ Devna Ramesh, Kratika Shetty
 ## Background and Motivation
 Ventilators have proven to be a lifesaver during the pandemic. However, mechanical ventilation is a clinician-intensive procedure, a limitation that was prominently on display during the early days of the COVID-19 pandemic.
 
-A traditional pressure controlled ventilator lets air in and out of a patient’s lungs according to airway pressures specified by a clinician. These hand-tuned PID controllers and similar variants have dominated the industry for decades but these are very unreliable, overshooting or undershooting their values or fluctuating very fast. Hence a data driven machine learning approach can be considered as an alternative solution. The goal of the project, which is also a Kaggle competition, is to predict the airway pressure in the respiratory circuit during the breath given the time series of control inputs. We aim to develop a model that self-regulates as per the patient’s vital in real-time which can lead to future development of intelligent ventilators.
 
 
 
 ## Dataset
-### Ventilator Data
-The ventilator data used in this competition was provided by [Kaggle](https://www.kaggle.com/c/ventilator-pressure-prediction/data) and was produced using a modified [open-source ventilator](https://www.peoplesvent.org/en/latest/) connected to an [artificial bellows test lung](https://www.ingmarmed.com/product/quicklung/) via a respiratory circuit.
+### Amazon Fine Food Reviews
+This dataset consists of reviews of fine foods from amazon. The data span a period of more than 10 years, including all ~500,000 reviews up to October 2012. Reviews include product and user information, ratings, and a plain text review. It also includes reviews from all other Amazon categories.
 
+Data includes:
+
+Reviews from Oct 1999 - Oct 2012
+568,454 reviews
+256,059 users
+74,258 products
+260 users with > 50 reviews
 ### Columns
 
 | Column |Description|
 |-------|--------|
-| id | Globally unique time step identifier across an entire file |
-| breath_id | Globally unique time step for breaths | 
-| R | Lung attribute indicating how restricted the airway is (in cmH2O/L/S) |
-| C | Lung attribute indicating how compliant the lung is (in mL/cmH2O). Physically, this is the change in volume per change in pressure |
-| time_step | The actual time stamp | 
-| u_in | The control input for the inspiratory solenoid valve. Ranges from 0 to 100 | 
-| u_out | The control input for the exploratory solenoid valve. Either 0 or 1 |
-| pressure | The airway pressure measured in the respiratory circuit, measured in cmH2O |
+| Id | Unique identifier for each of the review |
+| ProductId | Unique identifier for the product | 
+| UserId | Unique identifier for the user |
+| ProfileName | Profile name of User |
+| HelpfulnessNumerator | Number of users who found review helpful | 
+| HelpfulnessDenomitaor | Number of users who indicated whether they found the review helpful or not | 
+| Score | Rating between 1 to 5 |
+| Time | Timestamp of the review |
+| Summary |  Brief summary of the review |
+| Text | Text of the review |
  
 
 ## Exploratory Data Analysis
