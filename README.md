@@ -5,28 +5,47 @@
 Devna Ramesh, Kratika Shetty
 
 ## Background and Motivation
-Ventilators have proven to be a lifesaver during the pandemic. However, mechanical ventilation is a clinician-intensive procedure, a limitation that was prominently on display during the early days of the COVID-19 pandemic.
+To perform Sentiment Analysis of Amazon Fine Food Reviews and compare the performance of two Model - VADER and Roberta Base Model.
 
-A traditional pressure controlled ventilator lets air in and out of a patient’s lungs according to airway pressures specified by a clinician. These hand-tuned PID controllers and similar variants have dominated the industry for decades but these are very unreliable, overshooting or undershooting their values or fluctuating very fast. Hence a data driven machine learning approach can be considered as an alternative solution. The goal of the project, which is also a Kaggle competition, is to predict the airway pressure in the respiratory circuit during the breath given the time series of control inputs. We aim to develop a model that self-regulates as per the patient’s vital in real-time which can lead to future development of intelligent ventilators.
+VADER - Valence Aware Dictionary and sEntiment Reasoner. VADER is a type of sentiment analysis that relies on lexicons of sentiment-related words. Every word in the lexicon is evaluated using this process to determine if it is positive or negative and, if so, how +ve or -ve.
 
+When VADER looks at a piece of text, it checks to see whether any of the terms are recognized in the lexicon. For instance in the sentence, "The food is fantastic, and the environment is awesome", the terms "amazing" and "great" are present in the lexicon with score of 1.9 and 1.8 respectively.
 
+VADER generates four sentiment metrics - +ve, neutral, -ve and compound score.
+
+The Compound score is a metric that calculates the sum of all the lexicon ratings which have been normalized between -1(most extreme negative) and +1 (most extreme positive).
+
+Twitter-roBERTa-base for Sentiment Analysis - This is a roBERTa-base model trained on ~58M tweets and finetuned for sentiment analysis with the TweetEval benchmark. This model is suitable for English.
+
+RoBERTa is a transformers model pretrained on a large corpus of English data in a self-supervised fashion. This means it was pretrained on the raw texts only, with no humans labeling them in any way (which is why it can use lots of publicly available data) with an automatic process to generate inputs and labels from those texts. More precisely, it was pretrained with the Masked language modeling (MLM) objective. 
+
+Taking a sentence, the model randomly masks 15% of the words in the input then runs the entire masked sentence through the model and has to predict the masked words. This is different from traditional recurrent neural networks (RNNs) that usually see the words one after the other, or from autoregressive models like GPT which internally mask the future tokens. It allows the model to learn a bidirectional representation of the sentence. This way, the model learns an inner representation of the English language that can then be used to extract features useful for downstream tasks: if you have a dataset of labeled sentences, for instance, you can train a standard classifier using the features produced by the BERT model as inputs
 
 ## Dataset
-### Ventilator Data
-The ventilator data used in this competition was provided by [Kaggle](https://www.kaggle.com/c/ventilator-pressure-prediction/data) and was produced using a modified [open-source ventilator](https://www.peoplesvent.org/en/latest/) connected to an [artificial bellows test lung](https://www.ingmarmed.com/product/quicklung/) via a respiratory circuit.
+### Amazon Fine Food Reviews
+This dataset consists of reviews of fine foods from amazon. The data span a period of more than 10 years, including all ~500,000 reviews up to October 2012. Reviews include product and user information, ratings, and a plain text review. It also includes reviews from all other Amazon categories.
+
+Reviews from Oct 1999 - Oct 2012
+ * 568,454 reviews
+ * 256,059 users
+ * 74,258 products
+ * 260 users with > 50 reviews
+
 
 ### Columns
 
 | Column |Description|
 |-------|--------|
-| id | Globally unique time step identifier across an entire file |
-| breath_id | Globally unique time step for breaths | 
-| R | Lung attribute indicating how restricted the airway is (in cmH2O/L/S) |
-| C | Lung attribute indicating how compliant the lung is (in mL/cmH2O). Physically, this is the change in volume per change in pressure |
-| time_step | The actual time stamp | 
-| u_in | The control input for the inspiratory solenoid valve. Ranges from 0 to 100 | 
-| u_out | The control input for the exploratory solenoid valve. Either 0 or 1 |
-| pressure | The airway pressure measured in the respiratory circuit, measured in cmH2O |
+| Id | Unique identifier for each of the review |
+| ProductId | Unique identifier for the product | 
+| UserId | Unique identifier for the user |
+| ProfileName | Profile name of User |
+| HelpfulnessNumerator | Number of users who found review helpful | 
+| HelpfulnessDenomitaor | Number of users who indicated whether they found the review helpful or not | 
+| Score | Rating between 1 to 5 |
+| Time | Timestamp of the review |
+| Summary |  Brief summary of the review |
+| Text | Text of the review |
  
 
 ## Exploratory Data Analysis
