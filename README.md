@@ -19,7 +19,7 @@ Twitter-roBERTa-base for Sentiment Analysis - This is a roBERTa-base model train
 
 RoBERTa is a transformers model pretrained on a large corpus of English data in a self-supervised fashion. This means it was pretrained on the raw texts only, with no humans labeling them in any way (which is why it can use lots of publicly available data) with an automatic process to generate inputs and labels from those texts. More precisely, it was pretrained with the Masked language modeling (MLM) objective. 
 
-Taking a sentence, the model randomly masks 15% of the words in the input then runs the entire masked sentence through the model and has to predict the masked words. This is different from traditional recurrent neural networks (RNNs) that usually see the words one after the other, or from autoregressive models like GPT which internally mask the future tokens. It allows the model to learn a bidirectional representation of the sentence. This way, the model learns an inner representation of the English language that can then be used to extract features useful for downstream tasks: if you have a dataset of labeled sentences, for instance, you can train a standard classifier using the features produced by the BERT model as inputs
+Taking a sentence, the model randomly masks 15% of the words in the input then runs the entire masked sentence through the model and has to predict the masked words. This is different from traditional recurrent neural networks (RNNs) that usually see the words one after the other, or from autoregressive models like GPT which internally mask the future tokens. It allows the model to learn a bidirectional representation of the sentence. This way, the model learns an inner representation of the English language that can then be used to extract features useful for downstream tasks: if you have a dataset of labeled sentences, for instance, you can train a standard classifier using the features produced by the BERT model as inputs.
 
 ## Dataset
 ### Amazon Fine Food Reviews
@@ -50,13 +50,12 @@ Reviews from Oct 1999 - Oct 2012
 
 ## Exploratory Data Analysis
 
-### R & C Attributes
 
 A ventilator must consider lung attributes Capacitance (C) and Resistance(R) to predict the optimal pressure.
 
 R can be thought of as the resistance observed while blowing up a balloon through a straw. Higher R will have more resistance and it will be harder to let air inside.
 <p align="middle">
-<img src="Images/r_explained.png" width="440" height="400"> 
+<img src="images/screenshot1.png" width="440" height="400"> 
 </p>
 C can be thought of as the thickness of the balloon’s latex, the one with higher C will have thinner latex and it would be easier to let air in.
 <p align="middle">
@@ -95,7 +94,7 @@ There are three unique values for R and C each.
 
 Plot of pressure across different combination of R & C for different Breath IDs is shown below. We can infer from below that pressure is dependent on the values of R and C.
 <p align="middle">
-  <img src="Images/pressure_rc.png" width="450" /> 
+  <img src="Images/screenshot1.png" width="450" /> 
 </p>
 
 ## Feature Engineering
