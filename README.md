@@ -7,12 +7,6 @@ Devna Ramesh, Kratika Shetty
 ## Background and Motivation
 To perform Sentiment Analysis of Amazon Fine Food Reviews and compare the performance of two Models - VADER and Roberta Base Model.
 
-VADER - Valence Aware Dictionary and sEntiment Reasoner. VADER is a type of sentiment analysis that relies on lexicons of sentiment-related words. Every word in the lexicon is evaluated using this process to determine if it is positive or negative and, if so, how +ve or -ve.
-
-When VADER looks at a piece of text, it checks to see whether any of the terms are recognized in the lexicon. For instance in the sentence, "The food is fantastic, and the environment is awesome", the terms "amazing" and "great" are present in the lexicon with score of 1.9 and 1.8 respectively.
-
-VADER generates four sentiment metrics - +ve, neutral, -ve and compound score.
-
 The Compound score is a metric that calculates the sum of all the lexicon ratings which have been normalized between -1(most extreme negative) and +1 (most extreme positive).
 
 Twitter-roBERTa-base for Sentiment Analysis - This is a roBERTa-base model trained on ~58M tweets and finetuned for sentiment analysis with the TweetEval benchmark. This model is suitable for English.
@@ -78,58 +72,19 @@ We can observe that a significant number of reviews are 5 stars.
 </p>
 
 
-### Analysis of pressure, u_in and u_out with respect to time_step
+## VADER
 
-<p align="middle">
-  <img src="Images/pressure_time.png" width="450" />
-  <img src="Images/uin_time.png" width="450" /> 
-  <img src="Images/uout_time.png" width="450" />
-</p>
+VADER - Valence Aware Dictionary and sEntiment Reasoner. VADER is a type of sentiment analysis that relies on lexicons of sentiment-related words. Every word in the lexicon is evaluated using this process to determine if it is positive or negative and, if so, how +ve or -ve.
 
-### Plot of pressure, u_in and u_out for breath_id = 1
+When VADER looks at a piece of text, it checks to see whether any of the terms are recognized in the lexicon. For instance in the sentence, "The food is fantastic, and the environment is awesome", the terms "amazing" and "great" are present in the lexicon with score of 1.9 and 1.8 respectively.
 
-It is evident from below that u_out is zero during the inhalation and 1 during the exhalation.
-<p align="middle">
-  <img src="Images/breath_id_1_plot.png" width="500" />
-</p>
-
-### Distribuition of Pressure
-
-Variation of pressure is more during the inhalation phase of the breath.
-<p align="middle">
-  <img src="Images/pressure_one_cycle.png" width="450" />
-  <img src="Images/pressure_inhalation.png" width="450" /> 
-</p>
-
-### R and C values present in the Dataset
-
-There are three unique values for R and C each.
-<p align="middle">
-  <img src="Images/rc_unique.png" width="450" />
-</p>
-
-Plot of pressure across different combination of R & C for different Breath IDs is shown below. We can infer from below that pressure is dependent on the values of R and C.
-<p align="middle">
-  <img src="Images/screenshot1.png" width="450" /> 
-</p>
-
-## Feature Engineering
-
-Pressure is a function of past valve settings: p[i] = f(u_in[:i]). But u_in is not an independent variable, u_in is the output of a controller, and the inputs of the controller are the past measured pressures: u_in[i] = g(p[:i+1]). Hence in order to get data from previous time steps data was preprocessed as follows. Following features were added - 
-
- * New Lag features for u_in
- * Exponential Moving Mean, Standard Deviation and correlation of u_in for each breath ID 
- * Rolling Mean, Standard Deviation and Maximum of u_in for each breath. Here the size of the moving window is 10
- * Expanding Mean, Standard Deviation and Maximum of u_in for each breath ID where size of minimum period is 2
- * R and C after converting into indicator variables
+VADER generates four sentiment metrics - +ve, neutral, -ve and compound score.
 
 
 
-## Implementation
+**Result
 
-Since we are using a Dataset from a kaggle competition, we were unable to to get the true Y values for the test data. We split the trainng data as follows to get the training and test data - 
-
-**Training Data** 70% of the Total Breath IDs = 52,815 Breath IDs
+Here we can assume that reviews with low scores are mostly negative and reviews with hgiher scores are mostly positive. In the results, most of the reviews with low scores are identified as negative where as most of the reviews with higher scores are identified as positive.
 
 **Test Data** 30% of the Total Breath IDs = 22,635 Breath IDs
 
