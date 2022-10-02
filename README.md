@@ -182,10 +182,8 @@ Following Mean Absolute Error, R-squared and Mean Squared Error were obtained -
 
 ## GitHub Repository -  
 
-Here is the link for the [repository](https://github.com/anamika1302/CS539-Ventilator-Pressure-Prediction) 
+Here is the link for the [repository]([(https://github.com/kratikashetty/Sentiment-Analysis/blob/main/src/Senitment_Analysis.ipynb)]) 
 
 ### References
-1. https://machinelearningmastery.com/xgboost-for-time-series-forecasting/
-2. https://www.kaggle.com/theoviel/deep-learning-starter-simple-lstm 
-3. https://medium.com/geekculture/10-hyperparameters-to-keep-an-eye-on-for-your-lstm-model-and-other-tips-f0ff5b63fcd4
-4. https://www.kaggle.com/ranjeetshrivastav/ventilator-pressure-prediction-xgboost/notebook
+1. https://www.kaggle.com/code/khyatigajera/amazon-food-reviews
+
