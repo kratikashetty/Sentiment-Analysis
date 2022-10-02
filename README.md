@@ -90,7 +90,7 @@ RoBERTa is a transformers model pretrained on a large corpus of English data in 
 
 Taking a sentence, the model randomly masks 15% of the words in the input then runs the entire masked sentence through the model and has to predict the masked words. This is different from traditional recurrent neural networks (RNNs) that usually see the words one after the other, or from autoregressive models like GPT which internally mask the future tokens. It allows the model to learn a bidirectional representation of the sentence. This way, the model learns an inner representation of the English language that can then be used to extract features useful for downstream tasks: if you have a dataset of labeled sentences, for instance, you can train a standard classifier using the features produced by the BERT model as inputs.
 
-**Results
+## Results
 
 Senitmental analysis was performed on 5000 records due to performance issues in Roberta Model. Here we can assume that reviews with low scores are mostly negative and reviews with hgiher scores are mostly positive. 
 
