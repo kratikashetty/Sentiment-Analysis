@@ -74,7 +74,7 @@ Checking for Duplicate Values -
 We can observe that a significant number of reviews are 5 stars.
 
 <p align="middle">
-<img src="images/screenshot1.png" > 
+<img src="images/screenshot1.png" width="300"> 
 </p>
 
 
