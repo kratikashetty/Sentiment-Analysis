@@ -97,7 +97,7 @@ Senitmental analysis was performed on 5000 records due to performance issues in 
 Vader Result -
 
 <p align="middle">
-<img src="images/screenshot5.png" width="300"> 
+<img src="images/screenshot5.png" width="500"> 
 </p>
 
 In VADER results, most of the reviews with low scores are identified as negative where as most of the reviews with higher scores are identified as positive.
