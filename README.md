@@ -57,8 +57,9 @@ We observed that records have text populated when Summary is Null. When ProfileN
 </p>
 
 Checking for Duplicate Values - 
+
 <p align="middle">
-  <img src="images/screenshot6.png" width="300" />
+  <img src="images/screenshot6.png" width="450" />
 </p>
 
 ## Exploratory Data Analysis
