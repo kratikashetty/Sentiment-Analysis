@@ -58,11 +58,10 @@ We observed that records have text populated when Summary is Null. When ProfileN
 
 Checking for Duplicate Values - 
 <p align="middle">
-  <img src="images/screenshot5.png" width="300" />
+  <img src="images/screenshot6.png" width="300" />
 </p>
 
 ## Exploratory Data Analysis
-
 
 We can observe that a significant number of reviews are 5 stars.
 
