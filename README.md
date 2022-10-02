@@ -62,6 +62,12 @@ Checking for Duplicate Values -
   <img src="images/screenshot6.png" width="450" />
 </p>
 
+Inspecting Duplicate Values Further -
+
+<p align="middle">
+  <img src="images/screenshot7.png" width="450" />
+</p>
+
 ## Exploratory Data Analysis
 
 We can observe that a significant number of reviews are 5 stars.
