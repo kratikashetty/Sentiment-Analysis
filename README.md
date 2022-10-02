@@ -57,10 +57,10 @@ Checking for Null Values -
 Inspecting Null Values -
 We observed that records have the text populated when Summary is Null. When ProfileName is null, UserID is populated. In both the cases, the reviews are relevant to the dataset. Since these reviews could be uniquely identified, we did not drop records with null values.
 <p align="middle">
-  <img src="images/screenshot3.png" width="450" />
+  <img src="images/screenshot4.png" width="450" />
 </p>
 <p align="middle">
-  <img src="images/screenshot4.png" width="450" />
+  <img src="images/screenshot3.png" width="450" />
 </p>
 
 ## Exploratory Data Analysis
