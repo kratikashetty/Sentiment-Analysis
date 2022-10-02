@@ -5,7 +5,7 @@
 Devna Ramesh, Kratika Shetty
 
 ## Background and Motivation
-To perform Sentiment Analysis of Amazon Fine Food Reviews and compare the performance of two Model - VADER and Roberta Base Model.
+To perform Sentiment Analysis of Amazon Fine Food Reviews and compare the performance of two Models - VADER and Roberta Base Model.
 
 VADER - Valence Aware Dictionary and sEntiment Reasoner. VADER is a type of sentiment analysis that relies on lexicons of sentiment-related words. Every word in the lexicon is evaluated using this process to determine if it is positive or negative and, if so, how +ve or -ve.
 
@@ -46,7 +46,10 @@ Reviews from Oct 1999 - Oct 2012
 | Time | Timestamp of the review |
 | Summary |  Brief summary of the review |
 | Text | Text of the review |
- 
+
+## Data Preprocessing
+
+Inspected Null Values - 
 
 ## Exploratory Data Analysis
 
