@@ -103,51 +103,15 @@ Vader Result -
 In VADER results, most of the reviews with low scores are identified as negative where as most of the reviews with higher scores are identified as positive.
 
 
-### XGBOOST Using XGBRegressor
+### Comparsion Between the Models
 
-XGBoost was first considered for modeling the training data since it can be used for regression predictive modeling. We also used repeated 5-fold cross-validation to evaluate and pressure was found out by averaging pressure across multiple runs. After the training data fit into the XGBoost model, the result is generated shown below:
+RoBERTa-base model has identified positive reviews with 5 scores more confidently. In RoBERTa model, the reviews with 5 scores is assigned higher positivity score as compared to that of VADER model. Most of the lesser star 
 
 <p align="middle">
   <img src="Images/xgboost.png" width="450" />
 </p>
 
-**Feature Importance** Feature Importance provides a score that indicates how useful or valuable each feature was in the construction of the boosted decision trees within the model. Here, the features are automatically named according to their index in the input array. Columns id, time_step and u_out have the top three importance score. 
 
-<p align="middle">
-  <img src="Images/feature_importance.png" width="450" />
- <img src="Images/xgboost_index.png" width="450" />
-</p>
-
-Here top 3 features fO, f2, f5 corresponds to id, time_step and u_out.
-
-### Bi-LSTM Model 
-
-Stacked Bi-LSTMs Model was implemented in Keras. Bidirectional Long Short-Term Memory (Bi-LSTM) networks was implemented as they are capable of learning order dependence in sequence prediction problems. LSTM networks are well-suited to classifying, processing and making predictions based on time series data.
-
-5-fold cross validation was performed and avaerage pressure was calculated after 5 runs.
-
-Model parameters - 
- * Bi-LSTM - 4 Layers
- * 2 Dense Layers in the output layer with ReLu activation
-
-Following Mean Absolute Error, R-squared and Mean Squared Error were obtained - 
-
-<p align="middle">
-  <img src="Images/lstm_error.jpeg" width="450" />
-</p>
-
-
-## Conclusion
-
-1. Bi-LSTM Model performed  better than Xgboost.
-2. MAE and MSE of Bi-LSTM model was better than that of Xgboost
-
-| | Bi-LSTM |XGBoost|
-|-------|--------|--------|
-| Mean Squared Error | 0.1403 | 0.4471 |
-| Mean Absolute Error | 0.1903 | 0.387 |
-
-4. Good scores were obtained with 3 to 5 layers Bi-LSTM layers.
 
 ## GitHub Repository -  
 
