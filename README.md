@@ -55,7 +55,7 @@ Checking for Null Values -
 </p>
 
 Inspecting Null Values -
-We observed that records have the text populated when Summary is Null. When ProfileName is null, UserID is populated. In both the cases, the reviews are relevant to the dataset. Since these reviews could be uniquely identified, we did not drop records with null values.
+We observed that records have text populated when Summary is Null. When ProfileName is null, UserID is populated. In both the cases, the reviews are relevant to the dataset. Since these reviews could be uniquely identified, we did not drop records with null values.
 <p align="middle">
   <img src="images/screenshot4.png" width="450" />
 </p>
@@ -70,6 +70,11 @@ We can observe that a significant number of reviews are 5 stars.
 
 <p align="middle">
 <img src="images/screenshot1.png" width="440" height="400"> 
+</p>
+
+Checking for Duplicate Values - 
+<p align="middle">
+  <img src="images/screenshot5.png" width="300" />
 </p>
 ### Analysis of pressure, u_in and u_out with respect to time_step
 
