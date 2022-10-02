@@ -68,6 +68,8 @@ Inspecting Duplicate Values Further -
   <img src="images/screenshot7.png" width="450" />
 </p>
 
+Reviews with the same UserId, Review and Score posted at the same time can be considered as duplicates. There are rows duplicated for the same product ID and there are reviews which have different product ID. Reviews with different product ID posted at the same time can be considered as duplicates as review that is published for a version of prodcut is reproduced for every other variety in the products.
+
 ## Exploratory Data Analysis
 
 We can observe that a significant number of reviews are 5 stars.
