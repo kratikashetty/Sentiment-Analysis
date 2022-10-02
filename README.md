@@ -7,7 +7,6 @@ Devna Ramesh, Kratika Shetty
 ## Background and Motivation
 To perform Sentiment Analysis of Amazon Fine Food Reviews and compare the performance of two Models - VADER and Roberta Base Model.
 
-The Compound score is a metric that calculates the sum of all the lexicon ratings which have been normalized between -1(most extreme negative) and +1 (most extreme positive).
 
 Twitter-roBERTa-base for Sentiment Analysis - This is a roBERTa-base model trained on ~58M tweets and finetuned for sentiment analysis with the TweetEval benchmark. This model is suitable for English.
 
@@ -80,7 +79,7 @@ When VADER looks at a piece of text, it checks to see whether any of the terms a
 
 VADER generates four sentiment metrics - +ve, neutral, -ve and compound score.
 
-
+The Compound score is a metric that calculates the sum of all the lexicon ratings which have been normalized between -1(most extreme negative) and +1 (most extreme positive).
 
 **Result
 
