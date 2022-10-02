@@ -49,7 +49,10 @@ Reviews from Oct 1999 - Oct 2012
 
 ## Data Preprocessing
 
-Inspected Null Values - 
+Checking for Null Values - 
+<p align="middle">
+  <img src="images/screenshot2.png" width="450" />
+</p>
 
 ## Exploratory Data Analysis
 
