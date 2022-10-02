@@ -51,7 +51,7 @@ Reviews from Oct 1999 - Oct 2012
 
 Checking for Null Values - 
 <p align="middle">
-  <img src="images/screenshot2.png" width="450" />
+  <img src="images/screenshot2.png" width="300" />
 </p>
 
 Inspecting Null Values -
