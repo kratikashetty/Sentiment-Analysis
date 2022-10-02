@@ -105,7 +105,7 @@ In VADER results, most of the reviews with low scores are identified as negative
 
 ### Comparsion Between the Models
 
-RoBERTa-base model has identified positive reviews with 5 scores more confidently. In RoBERTa model, the reviews with 5 scores is assigned higher positivity score as compared to that of VADER model. Most of the lesser star 
+RoBERTa-base model has identified positive reviews with 5 scores more confidently. In RoBERTa model, the reviews with 5 scores is assigned higher positivity score as compared to that of VADER model. Most of the lesser star reviews are very low in positivity.
 
 <p align="middle">
   <img src="Images/xgboost.png" width="450" />
