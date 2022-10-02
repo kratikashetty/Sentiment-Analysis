@@ -182,7 +182,7 @@ Following Mean Absolute Error, R-squared and Mean Squared Error were obtained -
 
 ## GitHub Repository -  
 
-Here is the link for the [repository]([(https://github.com/kratikashetty/Sentiment-Analysis/blob/main/src/Senitment_Analysis.ipynb)]) 
+Here is the link for the [repository]([https://github.com/kratikashetty/Sentiment-Analysis/blob/main/src/Senitment_Analysis.ipynb]) 
 
 ### References
 1. https://www.kaggle.com/code/khyatigajera/amazon-food-reviews
